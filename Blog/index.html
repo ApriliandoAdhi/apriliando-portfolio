@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="vievport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=contact_support" />
+    
+        <script src="blog.js"></script>
+    </head>
+
+     <body>
+        <nav>
+            <div class="left-nav">
+                <a href="../index.html"><img src="../assets/img/aigen-logo.png" alt="nav-logo"></a>
+                <a href="../index.html">Home</a>
+                <a href="index.html">Blog</a>
+            </div>
+            <div class="right-nav">
+                <a href="../contact/index.html">Contact me</a>
+                <a href="../contact/index.html" class="icon">
+                    <span class="material-symbols-outlined">
+                        contact_support
+                    </span>
+                </a>
+            </div>
+        </nav>
+
+        <section class="blog">
+            <div id="contents" class="blog-list">
+                <div class="blog-list-item">
+                    <div class="blog-image">
+                        <img src="https://dummyimage.com/600x400/000/fff" alt="blog image">
+                    </div>
+                    <div class="blog-content">
+                    <h2>Blog Title</h2>
+                    <span class="detail-blog">17 Des 2024 09.00 | Author</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam tempora sint dolorem facere repellendus esse impedit provident nisi architecto asperiores!
+                    </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blog-form">
+               <div class="form-container">
+                <form onsubmit="addBlog(event)">
+                    <h2>Create Post</h2>
+                    <div>
+                        <label for="input-blog-title">Title</label>
+                        <input type="text" name="title" id="input-blog-title">
+                    </div>
+                    <div>
+                        <label for="input-blog-title">Description</label>
+                        <textarea name="content" id="input-blog-content"></textarea>
+                    </div>
+                    <div>
+                        <span>Upload image</span>
+                        <div class="input-blog-image-group">
+                            <label for="input-blog-image">
+                                <span>Attach file</span>
+                                <img src="../assets/img/file.png" alt="file">
+                            </label>
+                            <input type="file" name="file" id="input-blog-image" hidden>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Post</button>
+                    </div>
+                </form>
+               </div> 
+            </div>
+        </section>
+     </body>
+</html>
