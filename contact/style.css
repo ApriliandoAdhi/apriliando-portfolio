@@ -32,11 +32,11 @@ font-weight: 700;
 }
 
 nav a:hover {
-    color: #eb374e;
+    background-color: #ee1935;
 }
 
 .right-nav a {
-    background-color: #eb374e;
+    background-color: #f75c70;
     padding-inline: 12px;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -89,7 +89,7 @@ nav a:hover {
     padding: 8px 20px;
     width: 100%;
     color: white;
-    background-color: #eb374e;
+    background-color: #f75c70;
     border: none;
     border-radius: 8px;
 }
